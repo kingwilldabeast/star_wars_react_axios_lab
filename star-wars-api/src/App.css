@@ -1,42 +1,81 @@
+
+body {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+    background-color: black;
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+    border: 1px solid yellow;
+    border-radius: 10px;
+    /* background-color: rgb(229, 192, 192); */
+    padding: 10px;
+    /* width: 150%; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 40px;
+    margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navtext {
+    color: yellow;
 }
 
-.card {
-  padding: 2em;
+.navtext:hover {
+    color: red;
 }
 
-.read-the-docs {
-  color: #888;
+.main {
+    border: 1px solid blue;
+    border-radius: 10px;
+    /* background-color: rgb(53, 236, 175); */
+    /* padding: 10px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objectList {
+    border: 1px solid orange;
+    border-radius: 10px;
+    /* background-color: rgb(167, 215, 166); */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.objectItem {
+    border: 1px solid green;
+    border-radius: 10px;
+    /* background-color: rgb(97, 203, 235); */
+    color: rgb(37, 221, 37);
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    text-align: center;
 }
