@@ -6,6 +6,7 @@ import PeopleList from './PeopleList'
 import PlanetList from './PlanetList'
 import SpeciesList from './SpeciesList'
 import VehicleList from './VehicleList'
+import Bikini from './Bikini'
 
 export default function Main (props) {
     // console.log(props)
@@ -21,6 +22,7 @@ export default function Main (props) {
             <Route path="/planets" element={<PlanetList planets = {props.planets}/>}/>
             <Route path="/species" element={<SpeciesList species = {props.species}/>}/>
             <Route path="/vehicles" element={<VehicleList vehicles = {props.vehicles}/>}/>
+            <Route path="/bikini" element={<Bikini />}/>
         </Routes>
       </div>
     )

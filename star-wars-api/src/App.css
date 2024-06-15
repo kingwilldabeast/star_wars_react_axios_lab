@@ -143,3 +143,8 @@ body {
 .symbol {
     font-family: Jedi;
 }
+
+.bikini-link-symbol {
+    font-family: JediSymbol;
+    font-size: 25px;
+}
