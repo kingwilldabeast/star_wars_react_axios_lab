@@ -12,7 +12,7 @@ export default function Nav (props) {
             <Link to="/people"><h2 className="navtext">People</h2></Link>
             <Link to="/planets"><h2 className="navtext">Planets</h2></Link>
             <Link to="/species"><h2 className="navtext">Species</h2></Link>
-            <Link to="/vehicles"><h2 className="navtext">Vehicles</h2></Link>
+            <Link to="/vehicles"><h2 className="navtext">vehicles</h2></Link>
         </div>
     )
   }

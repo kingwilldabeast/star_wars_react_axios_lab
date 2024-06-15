@@ -13,7 +13,7 @@ export default function StarshipList (props) {
                             
                             <h2>Name: {starShip.name}</h2>
                             <h3>Capacity: {starShip.cargo_capacity}</h3>
-                            <h3>Cost: {starShip.cost_in_credits} Galactic Credits</h3>
+                            <h3>Cost: {starShip.cost_in_credits} <span className="symbol">$</span></h3>
                             <h3>Length: {starShip.length}</h3>
                             <h3>Passengers: {starShip.passengers}</h3>
                         </div>    
