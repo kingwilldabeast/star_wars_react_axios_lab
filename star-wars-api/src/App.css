@@ -75,6 +75,8 @@ body {
     color: yellow;
     border: 1px solid transparent;
     padding: 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
     /* border-radius: 10px; */
 }
 
@@ -82,6 +84,16 @@ body {
     border-top: 1px solid yellow;
     border-bottom: 1px solid yellow;
 }
+
+.navtext.active {
+    opacity: 0.2;
+}
+
+.bikini-link-symbol {
+    font-family: JediSymbol;
+    font-size: 25px;
+}
+  
 
 .main {
     border-radius: 10px;
@@ -136,15 +148,12 @@ body {
 
 .objectItem:hover {
     border: 1px dashed yellow;
+    text-shadow: 1px 1px 1px black;
     /* color: rgb(0, 255, 0); */
- 
+    /* background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/12/r2d2.jpg);
+    background-size: 600px; */
 }
 
 .symbol {
     font-family: Jedi;
-}
-
-.bikini-link-symbol {
-    font-family: JediSymbol;
-    font-size: 25px;
 }
