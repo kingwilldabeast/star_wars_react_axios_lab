@@ -81,6 +81,7 @@ body {
 }
 
 .navtext:hover {
+    color: yellow;
     border-top: 1px solid yellow;
     border-bottom: 1px solid yellow;
 }
@@ -152,6 +153,20 @@ body {
     /* color: rgb(0, 255, 0); */
     /* background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/12/r2d2.jpg);
     background-size: 600px; */
+}
+
+.expandedItem {
+    border: 1px solid yellow;
+    border-radius: 10px;
+    background-color: rgb(0,0,0,.5);
+    /* color: rgb(21, 122, 21); */
+    color: yellow;
+    padding: 10px;
+    margin: 10px;
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    font-family: Abel;
 }
 
 .symbol {

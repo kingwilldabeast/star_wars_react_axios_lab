@@ -1,6 +1,8 @@
 import {Route, Routes} from 'react-router-dom'
+import FileNotFound from './FileNotFound'
 import Home from './Home'
 import StarshipList from './StarshipList'
+import StarshipPage from './StarshipPage'
 import FilmList from './FilmList'
 import PeopleList from './PeopleList'
 import PlanetList from './PlanetList'
@@ -17,12 +19,14 @@ export default function Main (props) {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/starships" element={<StarshipList starShips = {props.starShips}/>}/>
+            <Route path="/starships/:starshipID" element={<StarshipPage starShips = {props.starShips}/>}/>
             <Route path="/films" element={<FilmList films = {props.films}/>}/>
             <Route path="/people" element={<PeopleList people = {props.people}/>}/>
             <Route path="/planets" element={<PlanetList planets = {props.planets}/>}/>
             <Route path="/species" element={<SpeciesList species = {props.species}/>}/>
             <Route path="/vehicles" element={<VehicleList vehicles = {props.vehicles}/>}/>
             <Route path="/bikini" element={<Bikini />}/>
+            <Route path="*" element={<FileNotFound />}/>
         </Routes>
       </div>
     )

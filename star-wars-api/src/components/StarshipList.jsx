@@ -1,5 +1,11 @@
+import { useNavigate } from "react-router-dom"
+
 export default function StarshipList (props) {
 
+    let navigate = useNavigate()
+    const showStarship = (starshipID) => {
+      navigate(`${starshipID}`)
+    }
     
     if(!props.starShips) {
         return <h1>Loading... please wait</h1>
@@ -9,7 +15,8 @@ export default function StarshipList (props) {
     
                 {
                     props.starShips.map((starShip, index) => (
-                        <div key={index} className="objectItem">
+                        <div key={index} className="objectItem" 
+                        onClick={() => showStarship(index)}>
                             
                             <h2>Name: {starShip.name}</h2>
                             <h3>Capacity: {starShip.cargo_capacity}</h3>
