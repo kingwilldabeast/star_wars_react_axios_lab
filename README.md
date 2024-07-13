@@ -7,7 +7,7 @@
 ---
 
 ## Intro
-In this deliverable, you'll consume the [Star Wars API](https://swapi.dev/api/starships) and render its data. 
+In this deliverable, you'll consume the [Star Wars API](https://swapi.dev/api/starships) and render its data as well as data for other people, planets, vehicles, etc.
 
 
 ## Part 1 - Axios and useEffect

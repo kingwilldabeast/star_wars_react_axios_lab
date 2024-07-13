@@ -46,7 +46,7 @@ export default function PlanetList (props) {
                 {
                     props.planets.map((planet, index) => (
                         <div key={index} className="objectItem"     
-                        style={{backgroundImage: backgroundImages[index], backgroundSize:'500px' }} 
+                        style={{backgroundImage: backgroundImages[index], backgroundSize:'500px', transition: "background-image 0.3s ease" }} 
                         onMouseOver={() => addImage(index)} 
                         // onMouseOver={testImage} 
                         onMouseLeave={() => removeImage(index)}
